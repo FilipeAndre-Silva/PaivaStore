@@ -1,0 +1,8 @@
+How to make migrations?
+
+1 - Install global dotnet
+    dotnet tool install --global dotnet-ef --version 6.0.13
+
+2 - Within the infrastructure project:
+    dotnet ef --startup-project ../PaivaStore.Api/ migrations add myMigration01
+    dotnet ef database update --startup-project ../PaivaStore.Api/ --project ../PaivaStore.Infra
