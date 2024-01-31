@@ -17,10 +17,10 @@ public class ProductController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAllAsync()
     {
-        var result = await _productApplicationService.GetAllProductsAsync();
+        var productResponseList = await _productApplicationService.GetAllProductsAsync();
 
-        if (!result.Any()) return NoContent();
+        if (!productResponseList.Any()) return NoContent();
 
-        return Ok(result);
+        return Ok(productResponseList);
     }
 }

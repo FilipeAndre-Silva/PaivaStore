@@ -1,7 +1,6 @@
 using AutoMapper;
 using PaivaStore.Application.Dtos.Product.Response;
 using PaivaStore.Application.Interfaces;
-using PaivaStore.Domain.Entities;
 using PaivaStore.Domain.Interfaces;
 
 namespace PaivaStore.Application.Services;
